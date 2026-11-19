@@ -1,0 +1,275 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #171717;
+    color: #d6b45c;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+header h2 {
+    color: white;
+}
+
+/* Navigasi */
+nav {
+    background: #c6a34a;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #171717;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Section */
+section {
+    padding: 40px 8%;
+}
+
+section h2 {
+    color: #9d7929;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Beranda */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #eee8d8;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero h2 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.hero img {
+    width: 40%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tombol */
+.tombol, .tombol-wa {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.tombol {
+    background: #b9953e;
+}
+
+.tombol:hover {
+    background: #8d6c25;
+}
+
+/* Tombol WhatsApp */
+.tombol-wa {
+    background: #25D366;
+    font-weight: bold;
+}
+
+.tombol-wa:hover {
+    background: #128C7E;
+}
+
+/* Keunggulan dan Produk */
+.keunggulan, .daftar-produk {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.isi, .produk {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.isi h3, .harga {
+    color: #a17e30;
+}
+
+.produk {
+    max-width: 280px;
+    transition: 0.3s;
+}
+
+.produk:hover {
+    transform: translateY(-5px);
+}
+
+.produk img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.keterangan, .catatan {
+    text-align: center;
+}
+
+.catatan {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* Promo */
+.promo, footer {
+    background: #171717;
+    color: white;
+    text-align: center;
+}
+
+.promo h2 {
+    color: #e0bd65;
+}
+
+/* Video dan Maps */
+.video, .maps {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    display: block;
+}
+
+.video iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 8px;
+}
+
+.maps {
+    max-width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Formulir */
+form {
+    max-width: 550px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #b9953e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #8d6c25;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .video iframe {
+        height: 230px;
+    }
+
+    section {
+        padding: 30px 6%;
+    }
+}

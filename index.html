@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Emas Irzsyad Bagus Saputra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1> TOKO EMAS </h1>
+        <h2>Irzsyad Bagus Saputra</h2>
+        <p>Emas Berkualitas, Investasi Masa Depan</p>
+        <p>Buka Setiap Hari | 08.00 - 20.00 WIB</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#promo">Promo</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda" class="hero">
+        <div>
+            <h2>Selamat Datang di Toko Emas Kami</h2>
+            <p>
+                Menyediakan berbagai pilihan emas berkualitas
+                untuk kebutuhan perhiasan maupun investasi.
+            </p>
+            <a href="#produk" class="tombol">Lihat Produk</a>
+        </div>
+
+        <img src="img/produk-1.jpg.jpeg" alt="Koleksi emas">
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>
+            Toko Emas Irzsyad merupakan usaha yang berasal dari
+            Sokaraja, Banyumas. Kami menyediakan produk emas
+            dengan mengutamakan kualitas, keaslian, dan pelayanan
+            yang baik kepada pelanggan.
+        </p>
+    </section>
+
+    <!-- Keunggulan -->
+    <section id="keunggulan">
+        <h2>Mengapa Memilih Kami?</h2>
+
+        <div class="keunggulan">
+            <div class="isi">
+                <h3>✦ Kualitas Terjamin</h3>
+                <p>Produk emas dengan kualitas yang diperhatikan.</p>
+            </div>
+
+            <div class="isi">
+                <h3>✦ Pelayanan Ramah</h3>
+                <p>Kami siap membantu kebutuhan pembelian emas Anda.</p>
+            </div>
+
+            <div class="isi">
+                <h3>✦ Pilihan Beragam</h3>
+                <p>Tersedia beberapa pilihan emas batangan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk -->
+    <section id="produk">
+        <h2>Produk dan Harga</h2>
+        <p class="keterangan">Pilihan emas yang tersedia di toko kami.</p>
+
+        <div class="daftar-produk">
+
+            <div class="produk">
+                <img src="img/produk-1.jpg.jpeg" alt="Emas Antam">
+                <h3>Emas Batangan Antam</h3>
+                <p>Ukuran 1 Gram</p>
+                <h3 class="harga">Rp2.636.000</h3>
+            </div>
+
+            <div class="produk">
+                <img src="img/produk-1.jpg.jpeg" alt="Emas Galeri24">
+                <h3>Emas Batangan Galeri24</h3>
+                <p>Ukuran 1 Gram</p>
+                <h3 class="harga">Rp2.527.000</h3>
+            </div>
+
+            <div class="produk">
+                <img src="img/produk-1.jpg.jpeg" alt="Emas UBS">
+                <h3>Emas Batangan UBS</h3>
+                <p>Ukuran 1 Gram</p>
+                <h3 class="harga">Rp2.553.000</h3>
+            </div>
+
+        </div>
+
+        <p class="catatan">
+            *Harga dapat berubah mengikuti harga pasar emas.
+        </p>
+    </section>
+
+    <!-- Promo -->
+    <section id="promo" class="promo">
+        <h2>Investasi Emas, Mulai dari Sekarang!</h2>
+        <p>
+            Emas bisa menjadi salah satu pilihan untuk
+            mempersiapkan kebutuhan finansial di masa depan.
+        </p>
+        <a href="#form-pemesanan" class="tombol">Pesan Sekarang</a>
+    </section>
+
+    <!-- Video -->
+    <section id="video">
+        <h2>Informasi Seputar Emas</h2>
+        <p>Simak video berikut untuk menambah pengetahuan tentang emas.</p>
+
+        <div class="video">
+            <iframe
+                src="https://www.youtube.com/embed/4abxPZNtkGQ"
+                title="Video tentang emas"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Form Pemesanan -->
+    <section id="form-pemesanan">
+        <h2>Formulir Pemesanan</h2>
+        <p>Silakan isi data berikut untuk melakukan pemesanan.</p>
+
+        <form action="#" method="post">
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                placeholder="Masukkan nama Anda" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                placeholder="Masukkan email Anda" required>
+
+            <label for="produk-pilihan">Pilih Produk</label>
+            <select id="produk-pilihan" name="produk" required>
+                <option value="">-- Pilih Produk --</option>
+                <option value="Antam">Emas Antam</option>
+                <option value="Galeri24">Emas Galeri24</option>
+                <option value="UBS">Emas UBS</option>
+            </select>
+
+            <label for="jumlah">Jumlah Pembelian</label>
+            <input type="number" id="jumlah" name="jumlah"
+                min="1" value="1" required>
+
+            <label for="pesan">Pesan Tambahan</label>
+            <textarea id="pesan" name="pesan"
+                rows="4" placeholder="Tulis pesan Anda"></textarea>
+
+            <button type="submit">Kirim Pesanan</button>
+
+        </form>
+    </section>
+
+    <!-- Lokasi -->
+    <section id="lokasi">
+        <h2>Lokasi Toko</h2>
+        <p>Jl. Wirasetra No. 99, Banyumas, Jawa Tengah.</p>
+
+        <iframe
+            class="maps"
+            src="https://maps.google.com/maps?q=Jl.%20Wirasetra%20No.%2099%2C%20Banyumas%2C%20Jawa%20Tengah&output=embed"
+            loading="lazy"
+            allowfullscreen
+            title="Lokasi Toko Emas">
+        </iframe>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>Email: irsyadbagus14@gmail.com</p>
+        <p>Instagram: @irzsyadbs</p>
+
+        <a href="https://wa.me/62827716315704"
+   target="_blank"
+   class="tombol-wa">
+    Hubungi via WhatsApp
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Toko Emas Irzsyad Bagus Saputra.</p>
+        <p>Berasal dari Sokaraja, Banyumas.</p>
+        <p>Terima kasih telah mengunjungi toko kami.</p>
+    </footer>
+
+</body>
+</html>
